@@ -1,0 +1,148 @@
+.mainHeader {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    width: calc(30% - 25px);
+    background: var(--gray-block);
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+
+.left.light {
+    background: white;
+}
+
+
+.leftTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    align-items: center;
+}
+
+.leftTopLeft {
+
+}
+
+.deg {
+    font-weight: 500;
+    font-size: 96px;
+    color: var(--blue);
+}
+
+.today {
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.infotext {
+    font-weight: normal;
+    font-size: 25px;
+    color: var(--gray-text);
+    margin-bottom: 14px;
+}
+
+.infotext:last-of-type {
+    margin-bottom: 0;
+}
+
+.right {
+    width: calc(70% - 25px);
+    background: var(--gray-block);
+    padding: 42px 0 42px 32px;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    margin-left: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.right.light {
+    background: white;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+    column-gap: 20px;
+}
+.block:last-of-type {
+    margin-bottom: 0;
+}
+
+.descr {
+    color: var(--gray-text);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    width: 91px;
+}
+
+.text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.circle{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.weatherIcon {
+
+}
+
+
+@media (max-width: 425px) {
+    .mainHeader {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        padding: 5px 15px 15px;
+        margin-bottom: 10px;
+    }
+    .leftTop {
+        margin-bottom: 20px;
+    }
+    .deg {
+        font-size: 80px;
+    }
+    .today {
+        font-size: 30px;
+    }
+    .infotext {
+        font-size: 20px;
+    }
+    .weatherIcon {
+        width: 50%;
+    }
+    .right {
+        width: 100%;
+        margin-left: 0;
+        padding: 22px 0 22px 12px;
+    }
+    .block {
+        margin-bottom: 20px;
+    }
+    .bg {
+        width: 60%;
+    }
+}

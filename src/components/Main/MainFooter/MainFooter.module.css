@@ -1,0 +1,167 @@
+/*.mainFooter {*/
+/*    padding: 50px 0 150px;*/
+/*}*/
+
+/*.list {*/
+/*    display: flex;*/
+/*    column-gap: 15px;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.item {*/
+
+/*}*/
+/*.item:hover {*/
+/*    background: var(--blue);*/
+/*}*/
+/*.date {*/
+/*    font-weight: normal;*/
+/*    font-size: 14px;*/
+/*    line-height: 17px;*/
+/*    color: var(--gray-text);*/
+/*}*/
+
+
+
+.title {
+    font-weight: normal;
+    font-size: 35px;
+    margin: 30px 0 15px;
+}
+
+.listDate {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.itemDate {
+    padding: 7px 20px;
+    font-weight: normal;
+    font-size: 18px;
+    border-radius: 5px;
+    background: var(--gray-block);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: .4s;
+    margin-bottom: 7px;
+}
+
+.itemDate.light {
+    background: var(--blue-block);
+}
+
+.itemDate:hover {
+    background: var(--blue);
+    transition: .4s;
+}
+.itemDateActive {
+    background-color: var(--blue);
+}
+
+.itemDateActive.light {
+    background-color: var(--blue);
+    color: white;
+}
+.itemDate.light:hover {
+    color: white;
+}
+
+.row {
+    padding: 20px;
+    display: flex;
+    background-color: var(--gray-block);
+    box-shadow: var(--shadow);
+    border-radius: 0 0 20px 20px;
+    gap: 20px;
+}
+
+.row.light {
+    background-color: white;
+}
+
+.card {
+    width: calc(12.5% - 17.5px);
+    background-color: var(--card-black);
+    padding: 11px 0 13px 11px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+}
+
+.card.light {
+    background: var(--blue-block);
+}
+
+.cardTitle {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+}
+
+.tempMax {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.tempMin {
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--gray-text);
+}
+
+.description {
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--gray-text);
+}
+
+
+@media (max-width: 425px) {
+    .title {
+        font-size: 30px;
+        margin: 20px 0 7px;
+    }
+    .listDate {
+        column-gap: 10px;
+    }
+    .itemDate {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    .row {
+        padding: 10px;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        width: calc(20%);
+        padding: 5px 0 6px 5px;
+        row-gap: 5px;
+    }
+    .cardTitle {
+        font-size: 11px;
+    }
+    .tempMax {
+        font-size: 11px;
+    }
+    .tempMin {
+        font-size: 10px;
+    }
+    .description {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
